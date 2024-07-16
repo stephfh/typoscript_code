@@ -13,14 +13,14 @@
         "TYPO3 CMS",
         "TypoScript"
     ],
-    "version": "6.3.1",
+    "version": "7.0.0",
     "autoload": {
         "psr-4": {
             "Itribe\\TyposcriptCode\\": "Classes/"
         }
     },
     "require": {
-        "typo3/cms-core": "^11.5"
+        "typo3/cms-core": "^12.4"
     },
     "extra": {
         "typo3/cms": {
@@ -29,5 +29,14 @@
     },
     "replace": {
         "typo3-ter/typoscript-code": "self.version"
+    },
+    "require-dev": {
+        "ssch/typo3-rector": "^2.6"
+    },
+    "config": {
+        "allow-plugins": {
+            "typo3/cms-composer-installers": true,
+            "typo3/class-alias-loader": true
+        }
     }
 }
